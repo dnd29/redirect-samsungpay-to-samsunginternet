@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Samsung wallet redirection
 // @namespace    http://tampermonkey.net/
-// @version      2024-07-17
+// @version      2024-08-08
 // @description  redirect samsung pay request to samsung internet
 // @author       dnd29
 // @match        https://*.mpay.samsung.com/*
