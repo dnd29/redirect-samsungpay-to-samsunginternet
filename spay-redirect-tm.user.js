@@ -13,8 +13,10 @@
 (function() {
     'use strict';
     // Your code here...
-    location.replace('samsunginternet://open?url='+window.location.href);
-    setTimeout(()=> {
-        window.close();
-    },5000);
+    if (!window.location.href.startsWith("https://kr.mpay.samsung.com/onlinepay/pc_mpi/payRequestSms.do")) {
+        location.replace('samsunginternet://open?url='+window.location.href);
+        setTimeout(()=> {
+            window.close();
+        },5000);
+    }
 })();
